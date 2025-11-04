@@ -26,7 +26,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Zimanie/recipe-page)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -52,4 +52,5 @@ I would like to keep getting challenges like this to get better at every little 
 
 - Frontend Mentor - [@Zimanie](https://www.frontendmentor.io/profile/Zimanie)
 - Twitter - [@Zimanie5](https://www.twitter.com/Zimanie5)
+
 
