@@ -1,0 +1,165 @@
+@font-face {
+    font-family: young-serif;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-weight: 400, 600,700;
+}
+
+:root {
+    --stone100: hsl(30, 54%, 90%);
+    --stone150: hsl(30, 18%, 87%);
+    --stone600: hsl(30, 10%, 34%);
+    --stone900: hsl(24, 5%, 18%);
+    --brown800: hsl(14, 45%, 36%);
+    --rose800: hsl(332, 51%, 32%);
+    --rose50: hsl(330, 100%, 98%);
+    --primary-color: hsl(0, 0%, 100%); 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: young-serif, outfit, sans-serif;
+    background-color: var(--stone100);
+    min-height: 100vh;
+    color: var(--stone600);
+    font-size: 0.8rem;
+
+}
+
+.recipe-container {
+    max-width: 380px;
+    background-color: var(--primary-color);
+}
+
+.recipe-page {
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+.recipe-page > *+*{
+    margin-top: 1rem;
+}
+
+.recipe-image {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    color: var(--stone900);
+}
+
+h2 {
+    color: var(--brown800);
+}
+
+p {
+    font-size: 0.8rem;
+    font-family: outfit, sans-serif;
+}
+
+.prep-time {
+    background-color: var(--rose50);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.prep-title {
+    list-style: none;
+    color: var(--rose800);
+    font-family: outfit, sans-serif;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.prep-list{
+    color: var(--stone600);
+    padding-left: 1.5rem;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.ingredient-list, 
+.instruction-list,
+.nutrition-list{
+    font-family: outfit, sans-serif;
+    line-height: 1.5rem;
+    padding-left: 1.5rem;
+}
+.nutrition-list {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.nutrition-table {
+    display: flex;
+    gap: 150px;
+    padding: 10px 0;
+    padding-left:30px;
+    border-bottom: 1px solid var(--brown800);
+    text-align: left;
+}
+
+.instruction {
+    font-weight: 700;
+}
+
+.nutrition-value {
+    font-weight: 800;
+    color: var(--brown800);
+}
+
+td:first-child {
+    text-align: left;
+    width: 30%;
+}
+
+td:last-child {
+    text-align: left;
+    width: 60%;
+}
+
+.nutrition-table:last-child {
+    border-bottom: none;
+}
+
+@media (min-width: 1080px) {
+    body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    }
+
+    .recipe-container {
+        max-width: 550px;
+        margin: 3rem auto;
+        border-radius: 10px;
+        padding: 1.5rem;
+    }
+
+    .recipe-page {
+        border-radius: 10px;
+        object-fit: cover;
+        padding: 0;
+    }
+
+    .recipe-image {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
